@@ -9,6 +9,20 @@ header{
   
 }
 
+nav > img {
+    animation: logo-spin 20s infinite linear;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
 h1{
     margin: 0px;
 }
