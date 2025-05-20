@@ -1,15 +1,12 @@
+import "../main/style.css";
 
-import "../main/style.css"
-
-export default function Main (props){
-
-     return(
-        <main>
-        <p> {props.item.description} </p>
-        <p> {props.item.price} </p>
-        <p> {props.item.image} </p>
-        <img src={props.item.image} alt="" />
-        <hr/>
-        </main>
-     )
+export default function Main(props) {
+  return (
+    <section>
+      <h3> Name </h3>
+      <img src={props.item.image} alt="Perfume " />
+      <p> {props.item.description} </p>
+      <p> KES {props.item.price.toFixed(2)} </p>
+    </section>
+  );
 }

@@ -4,9 +4,19 @@ body{
 }
 
 header{
-    background-color: rgb(116, 185, 116);
+    /* background:linear-gradient(to right, pink, rgb(248, 210, 210), rgb(161, 79, 79)); */
+    background-color: pink;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  
+nav{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 nav > img {

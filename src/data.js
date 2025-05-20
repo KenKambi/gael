@@ -27,37 +27,37 @@ const items = [
   },
   {
     "id": "P005",
-    "image": "https://example.com/images/versace-eros.jpg",
+    "image": "../src/assets/embace-perfume.png",
     "description": "A powerful and passionate fragrance for men, embodying love, passion, beauty, and desire. A blend of mint, green apple, and vanilla.",
     "price": 95.00
   },
   {
     "id": "P006",
-    "image": "https://example.com/images/ysl-black-opium.jpg",
+    "image": "../src/assets/yara-perfume.jpg",
     "description": "An addictive gourmand floral fragrance for women with notes of black coffee, white flowers, and vanilla. Bold and captivating.",
     "price": 105.00
   },
   {
     "id": "P007",
-    "image": "https://example.com/images/creed-aventus.jpg",
+    "image": "../src/assets/spraya-waridi-perfume.jpg",
     "description": "A sophisticated and daring fragrance for men, inspired by the dramatic life of a historic emperor. Features notes of pineapple, birch, and musk.",
     "price": 350.00
   },
   {
     "id": "P008",
-    "image": "https://example.com/images/marc-jacobs-daisy.jpg",
+    "image": "../src/assets/embace-perfume.png",
     "description": "A charming and effervescent floral fragrance for women, evoking a youthful spirit. With notes of wild berries, white violet, and jasmine.",
     "price": 85.00
   },
   {
     "id": "P009",
-    "image": "https://example.com/images/hermes-terre-d-hermes.jpg",
+    "image": "../src/assets/al-sayad-men-perfume.jpg",
     "description": "A woody, vegetal, and mineral fragrance for men. A symbolic narrative around matter and its transformation.",
     "price": 130.00
   },
   {
     "id": "P010",
-    "image": "https://example.com/images/lancome-la-vie-est-belle.jpg",
+    "image": "../src/assets/embace-perfume.png",
     "description": "A radiant and joyful fragrance for women, embodying the philosophy of life and happiness. Combines iris, patchouli, and gourmand notes.",
     "price": 115.00
   }

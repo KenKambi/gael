@@ -6,7 +6,7 @@ export default function Header() {
     <header>
         <nav>
         <img src={reactLogo} alt="React-Logo"/>
-            <span> Gael </span>
+        <h3> Gael </h3>
         </nav>   
     </header>
   );
