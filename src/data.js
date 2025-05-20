@@ -3,25 +3,25 @@
 const items = [
   {
     "id": "P001",
-    "image": "https://example.com/images/chanel-no5.jpg",
+    "image": "../src/assets/yara-perfume.jpg",
     "description": "A timeless and iconic floral aldehyde fragrance for women. Elegant, sophisticated, and utterly unforgettable.",
     "price": 150.00
   },
   {
     "id": "P002",
-    "image": "https://example.com/images/dior-sauvage.jpg",
+    "image": "../src/assets/embace-perfume.png",
     "description": "A radically fresh, raw, and noble composition for men. Inspired by wild, open spaces and a scorching blue sky.",
     "price": 120.00
   },
   {
     "id": "P003",
-    "image": "https://example.com/images/giorgio-armani-si.jpg",
+    "image": "../src/assets/al-sayad-men-perfume.jpg",
     "description": "A modern chypre fragrance for women, embracing femininity, courage, and grace. A captivating blend of blackcurrant nectar, freesia, and rose.",
     "price": 110.00
   },
   {
     "id": "P004",
-    "image": "https://example.com/images/tom-ford-oud-wood.jpg",
+    "image": "../src/assets/spraya-waridi-perfume.jpg",
     "description": "A distinctive and exotic woody fragrance that combines rare oud wood, sandalwood, and vetiver with amber and tonka bean.",
     "price": 280.00
   },

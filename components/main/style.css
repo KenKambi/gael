@@ -3,3 +3,9 @@
 main{
     margin: 15px;
 }
+
+main > img {
+    height: 100px;
+    width: 100px;
+    
+}
