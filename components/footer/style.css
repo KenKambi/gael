@@ -1,7 +1,27 @@
 
 
 footer{
-    height: 200px;
-    background-color: tomato;
+    background-color: rgb(71, 249, 255);
     text-align: center;
+}
+
+footer hr{
+
+}
+
+.footer-info{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.socials{
+    margin: 30px;
+}
+
+.small {
+   
+ 
+ 
+
 }

@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <main> {data} </main>
+      <main > {data } </main>
       <Footer />
     </>
   );
