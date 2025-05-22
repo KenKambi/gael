@@ -7,16 +7,28 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    background-color: rgb(243, 243, 243);
 
 }
 section{
     height: auto;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 7px;
+    border-radius: 5px;
     
+}
+
+section > button {
+    margin-bottom: 5px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
 }
 
 main > section > img {

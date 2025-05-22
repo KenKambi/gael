@@ -7,8 +7,9 @@ header{
     /* background:linear-gradient(to right, pink, rgb(248, 210, 210), rgb(161, 79, 79)); */
     background-color: pink;
     height: 50px;
+    margin-right: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -16,7 +17,8 @@ header{
     z-index: 1000;
 }
 
-nav{   
+nav{  
+    margin: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
