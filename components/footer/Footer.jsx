@@ -34,11 +34,11 @@ export default function Footer() {
           <h4>
             You can pay via Pochi la Biashara : <br />
             <FaPhone /> <span> +254 111 111111</span> <br />
-            (Gael enterprise) <br />
+            (Gael enterprise) <br /> 
             or <br />
             Paybill: <br />
-            Business Number: 100100 <br />
-            Account Number: 100100 <br />
+            Business Number - 100100 <br />
+            Account Number - 100100 <br />
             (Gael enterprise Ltd)
 
           </h4>
