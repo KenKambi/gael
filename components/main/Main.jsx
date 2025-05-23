@@ -2,6 +2,7 @@ import AddToCart from "../header/AddToCart";
 import "../main/style.css";
 
 export default function Main(props) {
+  console.log(props)
 
 
   return (

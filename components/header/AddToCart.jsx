@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./Header";
 
 export default function AddToCart() {
   const [count, setCount] = useState(0);
@@ -9,7 +10,7 @@ export default function AddToCart() {
 
   return (
     <>
-
+    <Header count={count}/>
       <p>{count}</p>
       <button onClick={addToCart}> Add to Cart</button>
 
