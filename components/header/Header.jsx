@@ -3,15 +3,9 @@ import reactLogo from "../header/react.svg"
 import { FaCartArrowDown } from "react-icons/fa";
 
 
-export default function Header() {
+export default function Header(props) {
 
-  const [count, setCount] = useState(0);
-
-
-  function addToCart(){
-    setCount((prevCount) => prevCount + 1)
-  }
-
+ 
 
 
 
@@ -28,7 +22,7 @@ export default function Header() {
         </nav>  
         <div>
          <FaCartArrowDown style={styles}/>
-         <span> {count} </span>
+         <span>  0 {props.count} </span>
         </div>
     </header>
   );
