@@ -5,6 +5,7 @@ import "../components/header/style.css";
 import items from "../src/data.js";
 
 function App() {
+// map over perfume data
   const data = items.map(function (item) {
     return <Main id={item.id} item={item} />;
   });
