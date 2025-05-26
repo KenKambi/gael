@@ -3,7 +3,7 @@ import {  FaInstagram, FaWhatsapp,  FaYoutubeSquare,  FaTwitter,  FaTiktok,  FaP
 
 export default function Footer() {
   const styles = {
-    color: "white",
+    color: "antiquewhite",
     width: "30px",
     height: "25px",
   };
@@ -35,7 +35,7 @@ export default function Footer() {
           </h4>
         </div>
       </div>
-      <hr />
+    
 
       <div className="socials">
         <a href="youtube.com" title="Youtube" target="_blank">
