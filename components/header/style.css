@@ -5,9 +5,10 @@ body{
 
 header{
     /* background:linear-gradient(to right, pink, rgb(248, 210, 210), rgb(161, 79, 79)); */
-    background-color: pink;
-    height: 50px;
+    background-color:  #8B1E4D;
+    height: 60px;
     margin-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,9 +26,9 @@ nav{
     align-content: center;
 }
 
-nav > img {
+/* nav > img {
     animation: logo-spin 20s infinite linear;
-}
+} */
 
 @keyframes logo-spin {
     from {
@@ -39,6 +40,38 @@ nav > img {
 
 }
 
-h1{
-    margin: 0px;
+nav > .gael-logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
+
+nav > h3 {
+    margin-left: 10px;
+    font-family: sans-serif ;
+    color: black;
+}
+
+
+.cart{
+    position: relative;
+}
+
+.cart-number{
+    position: absolute;
+    background-color: tomato;
+    text-align: center;
+    font-size: smaller;
+    padding-right: 2px;
+    font-weight: bold;
+    width: 15px  ;
+    border-radius: 50% ;
+    top: -5px;
+    left: 20px;
+}
+
+/* .cart-number >span{
+    text-align: center;
+    margin: -10px;
+    padding: 0px;
+} */

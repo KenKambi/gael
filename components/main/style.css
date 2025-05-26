@@ -13,6 +13,8 @@ main{
 section{
     height: auto;
     background-color: white;
+    color:  #333333;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +24,13 @@ section{
     
 }
 
+section > h3 {
+    color: #8B1E4D;
+}
+
 section > button {
     margin-bottom: 5px;
-    background-color: aquamarine;
+    background-color: #F5C5D5;
     border: none;
     border-radius: 10px;
     width: 80px;

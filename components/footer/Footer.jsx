@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   const styles = {
-    color: "black",
+    color: "white",
     width: "30px",
     height: "25px",
   };
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
       <small className="small">
         {" "}
-        &copy; {new Date().getFullYear()}. Thank you for visiting our website.{" "}
+        &copy; {new Date().getFullYear()}. Thank you for visiting Gael Essence.{" "}
       </small>
     </footer>
   );

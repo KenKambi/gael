@@ -1,11 +1,12 @@
 import { useState } from "react";
 import reactLogo from "../header/react.svg" 
+import icon from "../header/gael-logo.jpeg" 
 import { FaCartArrowDown } from "react-icons/fa";
 
 
 export default function Header(props) {
 
- console.log(props)
+//  console.log(props)
 
 
 
@@ -17,12 +18,15 @@ export default function Header(props) {
   return (
     <header>
         <nav>
-        <img src={reactLogo} alt="React-Logo"/>
-        <h3> Gael </h3>
+        {/* <img src={reactLogo} alt="React-Logo"/> */}
+        <img className="gael-logo" src={icon} alt="Gael Essence" />
+        <h3> Gael Essence </h3>
         </nav>  
-        <div>
+        <div className="cart">
          <FaCartArrowDown style={styles}/>
-         <span>  0 {props.count} </span>
+         <div className="cart-number">
+         <span>  {props.count} </span>
+         </div>
         </div>
     </header>
   );

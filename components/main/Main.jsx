@@ -1,8 +1,8 @@
-import AddToCart from "../header/AddToCart";
+import { useState } from "react";
 import "../main/style.css";
 
 export default function Main(props) {
-  console.log(props)
+   console.log(props)
 
 
   return (
@@ -11,7 +11,7 @@ export default function Main(props) {
       <img src={props.item.image} alt="Perfume " />
       <p> {props.item.description} </p>
       <p> KES {props.item.price.toFixed(2)} </p>
-      <AddToCart  />
+      <button onClick={props.addToCart}> Add to Cart</button>
     </section>
   );
 }
