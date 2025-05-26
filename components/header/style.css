@@ -7,10 +7,10 @@ header{
     /* background:linear-gradient(to right, pink, rgb(248, 210, 210), rgb(161, 79, 79)); */
     background-color:  #8B1E4D;
     height: 60px;
-    margin-right: 50px;
+    margin-right: 90px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -19,7 +19,7 @@ header{
 }
 
 nav{  
-    margin: 20px; 
+    margin: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,30 +41,36 @@ nav{
 }
 
 nav > .gael-logo{
+    cursor: pointer;
     width: 45px;
     height: 45px;
     border-radius: 50%;
 }
 
 nav > h3 {
+    cursor: pointer;
     margin-left: 10px;
     font-family: sans-serif ;
-    color: black;
+    color:#FFF5F8;
 }
 
 
 .cart{
+    margin-right: 50px;
+    cursor: pointer;
     position: relative;
 }
 
 .cart-number{
     position: absolute;
+    color: #FFF5F8;
     background-color: tomato;
     text-align: center;
     font-size: smaller;
-    padding-right: 2px;
+    padding: 1px;
     font-weight: bold;
-    width: 15px  ;
+    width: 17px;
+    height: 17px;
     border-radius: 50% ;
     top: -5px;
     left: 20px;

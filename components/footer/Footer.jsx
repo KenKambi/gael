@@ -1,14 +1,5 @@
 import "../footer/style.css";
-import {
-  FaInstagram,
-  FaWhatsapp,
-  FaYoutubeSquare,
-  FaTwitter,
-  FaXing,
-  FaTiktok,
-  FaPhone,
-  FaEnvelope,
-} from "react-icons/fa";
+import {  FaInstagram, FaWhatsapp,  FaYoutubeSquare,  FaTwitter,  FaTiktok,  FaPhone,  FaEnvelope} from "react-icons/fa";
 
 export default function Footer() {
   const styles = {
@@ -26,7 +17,7 @@ export default function Footer() {
             <FaPhone /> <span> +254 111 111111</span>
           </h4>
           <h4>
-            <FaEnvelope /> <span> gaelperfumes@gmail.com </span>
+            <FaEnvelope /> <span> gaelessence@gmail.com </span>
           </h4>
         </div>
         <div>

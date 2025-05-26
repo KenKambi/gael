@@ -11,7 +11,7 @@ export default function Header(props) {
 
 
     const styles = {
-    color: "black",
+    color: "#FFF5F8",
     width: "30px",
     height: "25px",
   };
@@ -23,7 +23,7 @@ export default function Header(props) {
         <h3> Gael Essence </h3>
         </nav>  
         <div className="cart">
-         <FaCartArrowDown style={styles}/>
+         <FaCartArrowDown style={styles} title="Cart Items"/>
          <div className="cart-number">
          <span>  {props.count} </span>
          </div>

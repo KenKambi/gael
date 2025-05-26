@@ -1,7 +1,7 @@
 
 
 main{
-    margin-top: 55px;
+    margin-top: 75px;
     margin-left: 20px;
     margin-right: 20px;
     display: grid;
@@ -10,8 +10,17 @@ main{
     background-color: rgb(243, 243, 243);
 
 }
+
+@media (max-width: 760px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    } 
+    
+}
+
+
 section{
-    height: auto;
     background-color: white;
     color:  #333333;
     font-weight: bold;
@@ -29,6 +38,7 @@ section > h3 {
 }
 
 section > button {
+    cursor: pointer;
     margin-bottom: 5px;
     background-color: #F5C5D5;
     border: none;
@@ -37,8 +47,13 @@ section > button {
     height: 35px;
 }
 
+section > button:hover{
+    background-color: #f5c5d5ce;
+}
+
+
 main > section > img {
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 250px;
     
 }
