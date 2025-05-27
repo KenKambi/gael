@@ -35,7 +35,7 @@ export default function Footer() {
           </h4>
         </div>
       </div>
-    
+    <hr />
 
       <div className="socials">
         <a href="youtube.com" title="Youtube" target="_blank">

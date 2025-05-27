@@ -16,7 +16,7 @@ header{
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 2px 4px pink;
+    box-shadow: 2px 4px rgba(255, 192, 203, 0.651);
 }
 
 nav{  
@@ -58,8 +58,39 @@ nav > h3 {
 
 .cart{
     margin-right: 50px;
-    cursor: pointer;
     position: relative;
+}
+
+.cart > button {
+    cursor: pointer;
+       background-color:  #8B1E4D;
+       border: none;
+}
+
+.cart > p {
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    padding: 20px;
+width: 250px;
+background-color: #8b1e4d71;
+backdrop-filter: blur(4px); /* Light blur */
+color:#FFF5F8;
+z-index: 100px;
+border-radius: 5px;
+}
+
+
+.cart > p::before{
+  content: '';
+  position: absolute;
+  top: -20px; /* position above the box */
+  right: 20px; /* tweak to point toward the envelope */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #8b1e4d71; /* match box background */
 }
 
 .cart-number{
