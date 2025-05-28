@@ -73,7 +73,7 @@ nav > h3 {
     right: -10px;
     padding: 20px;
 width: 250px;
-background-color: #8b1e4d71;
+background-color: rgba(0, 0, 0, 0.705);
 backdrop-filter: blur(4px); /* Light blur */
 color:#FFF5F8;
 z-index: 100px;
@@ -84,13 +84,13 @@ border-radius: 5px;
 .cart > p::before{
   content: '';
   position: absolute;
-  top: -20px; /* position above the box */
-  right: 20px; /* tweak to point toward the envelope */
+  top: -20px;
+  right: 20px; 
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 20px solid #8b1e4d71; /* match box background */
+  border-bottom: 20px solid  rgba(0, 0, 0, 0.705); /* match box background */
 }
 
 .cart-number{
