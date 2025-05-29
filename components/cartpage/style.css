@@ -1,11 +1,9 @@
-
-
-
-
-main {
-    height: 200px;
-    background-color: #F5C5D5;
+.no-items {
+  margin: 80px 20px 0 20px;
+  height: 200px;
+  background-color: #f5c5d5;
   width: auto;
+  /* max-width: 630px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,15 +13,15 @@ main {
   box-shadow: 3px 4px #00000049;
 }
 
-
-main:hover{
-    border: 1px solid #8B1E4D;
+.no-items:hover {
+  border: 1px solid #8b1e4d;
 }
 
-main > h2 {
+.no-items > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px;
   padding: 10px;
 }
+
