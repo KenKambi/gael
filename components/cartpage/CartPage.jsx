@@ -1,12 +1,13 @@
+import "../cartpage/style.css";
 
+export default function CartPage() {
+  return (
+    <main>
+      <h2 >
+        Hello, There are currently no items in the cart.
+        </h2>
 
-
-export default function CartPage () {
-
-
-    return (
-        <>
-        <h1 style={{width: "100px", height: "200px", backgroundColor: "yellow" }}>  Hello </h1>
-        </>
-    )
+    
+    </main>
+  );
 }

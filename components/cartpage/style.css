@@ -1,3 +1,29 @@
 
 
 
+
+main {
+    height: 200px;
+    background-color: #F5C5D5;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 3px 4px #00000049;
+}
+
+
+main:hover{
+    border: 1px solid #8B1E4D;
+}
+
+main > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 10px;
+}

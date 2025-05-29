@@ -24,7 +24,9 @@ export default function Header(props) {
 
   function handleToCartSection() {
     navigate("/cart")
-    console.log("clicked")
+  }
+  function handleToHomeSection() {
+    navigate("/")
   }
 
   const styles = {
@@ -34,11 +36,14 @@ export default function Header(props) {
   };
   return (
     <header>
+
+      <button>
       <nav>
         {/* <img src={reactLogo} alt="React-Logo"/> */}
         <img className="gael-logo" src={icon} alt="Gael Essence" />
         <h3> Gael Essence </h3>
       </nav>
+      </button>
       <div className="cart">
         <button onClick={handleToCartSection}>
           <FaCartArrowDown style={styles} title="Cart Items" />
