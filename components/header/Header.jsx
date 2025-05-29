@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "../header/react.svg";
 import icon from "../header/gael-logo.jpeg";
 import { FaCartArrowDown } from "react-icons/fa";
 
 export default function Header(props) {
+  const [cartMessage, setCartMessage] = useState(false);
 
-  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    if (props.count > 0) {
+      setCartMessage(true);
 
-  const handleShow = () => {
-    setOpen(!open)
-  }
+      const timer = setTimeout(() => {
+        setCartMessage(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [props.count]);
 
   const styles = {
     color: "#FFF5F8",
@@ -24,20 +31,16 @@ export default function Header(props) {
         <h3> Gael Essence </h3>
       </nav>
       <div className="cart">
-        <button onClick={handleShow} > 
+        <button>
           <FaCartArrowDown style={styles} title="Cart Items" />
         </button>
         <div className="cart-number">
           <span> {props.count} </span>
         </div>
-      { open && <p>
-        Welcome! This area contains important details. 
-        You can use this space to show notifications, 
-        instructions, or messages to your users. 
-        Click the envelope icon again to close this dialog.
-      </p>}
+        <p className={`cart-message ${cartMessage ? "show" : ""} `}>
+          {props.count} {props.count > 1 ? "Items" : "Item"} added to cart.
+        </p>
       </div>
-
     </header>
   );
 }
