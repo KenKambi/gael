@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import reactLogo from "../header/react.svg";
 import icon from "../header/gael-logo.jpeg";
 import { FaCartArrowDown } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Header(props) {
   const [cartMessage, setCartMessage] = useState(false);
+  const navigate = useNavigate()
+
 
   useEffect(() => {
     if (props.count > 0) {
@@ -17,6 +20,12 @@ export default function Header(props) {
       return () => clearTimeout(timer);
     }
   }, [props.count]);
+
+
+  function handleToCartSection() {
+    navigate("/cart")
+    console.log("clicked")
+  }
 
   const styles = {
     color: "#FFF5F8",
@@ -31,7 +40,7 @@ export default function Header(props) {
         <h3> Gael Essence </h3>
       </nav>
       <div className="cart">
-        <button>
+        <button onClick={handleToCartSection}>
           <FaCartArrowDown style={styles} title="Cart Items" />
         </button>
         <div className="cart-number">
