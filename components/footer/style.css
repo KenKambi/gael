@@ -2,7 +2,7 @@ footer {
   background-color: black;
   color: antiquewhite;
   text-align: center;
-  width: auto;
+
   
 }
 
@@ -27,13 +27,13 @@ footer hr {
   }
 }
 
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: 950px;
   }
-}
+} */
 
 .socials {
   margin: 30px;
