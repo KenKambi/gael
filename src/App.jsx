@@ -21,13 +21,11 @@ function App() {
 
   return (
     <>
-      
         <Header count={count} />
         <Routes>
           <Route path="/" element={ <main> {data} </main> } />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
-      
       <Footer />
     </>
   );
