@@ -1,10 +1,30 @@
 import "../cartpage/style.css";
 
 export default function CartPage(props) {
-  console.log(props.cart)
+  //console.log(props.cart)
+
+  const total = props.cart.reduce((acc, item) => {
+    return acc + item.price * item.quantity;
+  }, 0);
   return (
-    <div className="no-items">
-      <h2>Hello, There are currently no items in the cart.</h2>
-    </div>
+    <>
+      {props.cart.length === 0 ? (
+        <div className="no-items">
+          <h2>Hello, There are currently no items in the cart.</h2>
+        </div>
+      ) : (
+        <ul className="ordered-list">
+          {props.cart.map((item) => {
+            return (
+              <li key={item.id}>
+                Item id {item.id} <br />
+                Total : KES {(item.price * item.quantity).toFixed(2)}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      <h3> Total: KES {total.toFixed(2)} </h3>
+    </>
   );
 }

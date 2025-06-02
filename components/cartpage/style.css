@@ -3,7 +3,7 @@
   height: 200px;
   background-color: #f5c5d5;
   width: auto;
-  /* max-width: 630px; */
+  /* max-width: 630px; */ 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,3 +25,7 @@
   padding: 10px;
 }
 
+
+.ordered-list{
+  margin-top: 300px;
+}

@@ -5,8 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Header(props) {
   const [cartMessage, setCartMessage] = useState(false);
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (props.count > 0) {
@@ -20,12 +19,11 @@ export default function Header(props) {
     }
   }, [props.count]);
 
-
   function handleToCartSection() {
-    navigate("/cart")
+    navigate("/cart");
   }
   function handleToHomeSection() {
-    navigate("/")
+    navigate("/");
   }
 
   const styles = {
@@ -35,16 +33,20 @@ export default function Header(props) {
   };
   return (
     <header>
-
       <button className="logo-btn" onClick={handleToHomeSection}>
-      <nav>
-        {/* <img src={reactLogo} alt="React-Logo"/> */}
-        <img className="gael-logo" src={icon} alt="Gael Essence" />
-        <h3> Gael Essence </h3>
-      </nav>
+        <nav>
+          {/* <img src={reactLogo} alt="React-Logo"/> */}
+          <img className="gael-logo" src={icon} alt="Gael Essence" />
+          <h3> Gael Essence </h3>
+        </nav>
       </button>
       <div className="cart">
-        <button onClick={ () => {handleToCartSection(); props.addToCart();}} >
+        <button
+          onClick={() => {
+            handleToCartSection();
+            // props.addToCart();
+          }}
+        >
           <FaCartArrowDown style={styles} title="Cart Items" />
         </button>
         <div className="cart-number">
