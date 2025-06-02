@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import reactLogo from "../header/react.svg";
 import icon from "../header/gael-logo.jpeg";
 import { FaCartArrowDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -45,7 +44,7 @@ export default function Header(props) {
       </nav>
       </button>
       <div className="cart">
-        <button onClick={handleToCartSection}>
+        <button onClick={ () => {handleToCartSection(); props.addToCart();}} >
           <FaCartArrowDown style={styles} title="Cart Items" />
         </button>
         <div className="cart-number">

@@ -62,13 +62,13 @@ const items = [
     "price": 115.00
   },
     {
-    "id": "P003",
+    "id": "P011",
     "image": "../src/assets/al-sayad-men-perfume.jpg",
     "description": "A modern chypre fragrance for women, embracing femininity, courage, and grace. A captivating blend of blackcurrant nectar, freesia, and rose.",
     "price": 110.00
   },
   {
-    "id": "P004",
+    "id": "P012",
     "image": "../src/assets/spraya-waridi-perfume.jpg",
     "description": "A distinctive and exotic woody fragrance that combines rare oud wood, sandalwood, and vetiver with amber and tonka bean.",
     "price": 280.00
