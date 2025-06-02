@@ -27,5 +27,10 @@
 
 
 .ordered-list{
-  margin-top: 300px;
+  margin-top: 80px;
+}
+
+.ordered-list > section > li > img{
+  width: 200px;
+  height: 200px;
 }

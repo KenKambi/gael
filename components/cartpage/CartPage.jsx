@@ -15,11 +15,17 @@ export default function CartPage(props) {
       ) : (
         <ul className="ordered-list">
           {props.cart.map((item) => {
-            return (
+            return ( 
+              <section>
+
+
               <li key={item.id}>
+                <img src={item.image} alt="Perfume " /> <br />
                 Item id {item.id} <br />
+                Qunatity : {item.quantity} <br />
                 Total : KES {(item.price * item.quantity).toFixed(2)}
               </li>
+              </section>
             );
           })}
         </ul>
