@@ -42,10 +42,7 @@ export default function Header(props) {
       </button>
       <div className="cart">
         <button
-          onClick={() => {
-            handleToCartSection();
-            // props.addToCart();
-          }}
+          onClick={handleToCartSection}
         >
           <FaCartArrowDown style={styles} title="Cart Items" />
         </button>
