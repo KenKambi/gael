@@ -1,4 +1,4 @@
-import "../footer/style.css";
+I'mimport "../footer/style.css";
 import {  FaInstagram, FaWhatsapp,  FaYoutubeSquare,  FaTwitter,  FaTiktok,  FaPhone,  FaEnvelope} from "react-icons/fa";
 
 export default function Footer() {
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
       <small className="small">
         {" "}
-        &copy; {new Date().getFullYear()}. Thank you for visiting Gael Essence.{" "}
+        &copy; {new Date().getFullYear()}. All rights reserved. Thank you for visiting Gael Essence.{" "}
       </small>
     </footer>
   );
