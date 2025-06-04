@@ -3,10 +3,6 @@ import "../main/style.css";
 
 export default function Main(props) {
    //console.log(props.item.id)
-   
-   
-
-
   return (
     
 
