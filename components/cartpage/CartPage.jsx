@@ -7,6 +7,18 @@ export default function CartPage(props) {
   const total = props.cart.reduce((acc, item) => {
     return acc + item.price * item.quantity;
   }, 0);
+
+  const message = encodeURIComponent(
+    `Hello, I would like to order:\n\n` +
+      props.cart.map((item) => {
+          return (`${item.name}\n Quantity: ${item.quantity} - KES ${item.price.toFixed(2)}\n`);
+        })
+        .join(`\n`) + `\n\n Total: KES ${total}`
+      
+  );
+
+  // const instagramLink = `https://www.instagram.com/direct/t/bossyboy_ke?text=${message}`;
+  const whatsappLink = `https://wa.me/254757382779?text=${message}`;
   return (
     <div className="my-orders">
       {props.cart.length === 0 ? (
@@ -21,10 +33,10 @@ export default function CartPage(props) {
                 <div className="cart-display-item" key={item.id}>
                   <img src={item.image} alt="Perfume " /> <br />
                   <div className="cart-display-item-info">
-                  Item id {item.id} <br />
-                  Item Description: {item.description}
-                  Qunatity : {item.quantity} <br /> <br />
-                  Total : KES {(item.price * item.quantity).toFixed(2)}
+                    Item id {item.id} <br />
+                    Item Description: {item.description}
+                    Qunatity : {item.quantity} <br /> <br />
+                    Total : KES {(item.price * item.quantity).toFixed(2)}
                   </div>
                 </div>
               </div>
@@ -33,16 +45,15 @@ export default function CartPage(props) {
         </div>
       )}
       <div className="checkout-section">
-
         <h3> Subtotal: KES {total.toFixed(2)} </h3>
         <p> Send your oder to Gael Essence's Whatsapp/Instagram page:</p>
-        <a href="#" target="_blank">
-        <button target="_blank" > Proceed to checkout via Whatsapp</button>
+        {/* <a href={instagramLink} target="_blank">
+          <button> Order via Intagram</button>
+        </a> */}
+        <a href={whatsappLink} target="_blank">
+          <button> Order via Whatsapp</button>
         </a>
-        
-        <button> Proceed to checkout via Intsagram</button>
       </div>
-
     </div>
   );
 }
