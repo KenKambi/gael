@@ -36,11 +36,21 @@
   background-color: rgb(243, 243, 243);
 }
 
+.ordered-list > h3 {
+  margin: 0;
+  color: #8b1e4d;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 7px;
+  text-align: center;
+}
+
 .cart-display {
   background-color: white;
   color: #333333;
   padding: 7px;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
+  
 }
 
 .cart-display-item {
@@ -59,6 +69,7 @@
 .checkout-section {
   margin-top: 80px;
   margin-right: 20px;
+  max-height: 530px;
   background-color: white;
   padding: 7px;
   border-radius: 5px;

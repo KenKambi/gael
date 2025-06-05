@@ -27,6 +27,8 @@ export default function CartPage(props) {
         </div>
       ) : (
         <div className="ordered-list">
+          <h3> Your Cart :</h3>
+
           {props.cart.map((item) => {
             return (
               <div className="cart-display">
