@@ -8,13 +8,21 @@ export default function CartPage(props) {
     return acc + item.price * item.quantity;
   }, 0);
 
+  const formattedTotal = total.toLocaleString("en-US", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })
+
   const message = encodeURIComponent(
     `Hello, I would like to order:\n\n` +
-      props.cart.map((item) => {
-          return (`${item.name}\n Quantity: ${item.quantity} - KES ${item.price.toFixed(2)}\n`);
+      props.cart
+        .map((item) => {
+          return `${item.name}\n Quantity: ${
+            item.quantity
+          } - KES ${item.price.toFixed(2)}\n`;
         })
-        .join(`\n`) + `\n\n Total: KES ${total}`
-      
+        .join(`\n`) +
+      `\n\n Total: KES ${formattedTotal}`
   );
 
   // const instagramLink = `https://www.instagram.com/direct/t/bossyboy_ke?text=${message}`;
@@ -48,7 +56,11 @@ export default function CartPage(props) {
         </div>
       )}
       <div className="checkout-section">
-        <h3> Subtotal: KES {total.toFixed(2)} </h3>
+        <h3>
+          {" "}
+          Subtotal: KES{" "}
+          {formattedTotal}{" "}
+        </h3>
         <p> Send your oder to Gael Essence's Whatsapp/Instagram page:</p>
         {/* <a href={instagramLink} target="_blank">
           <button> Order via Intagram</button>
