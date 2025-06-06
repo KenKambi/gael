@@ -21,6 +21,7 @@ export default function Header(props) {
 
   function handleToCartSection() {
     navigate("/cart");
+    window.scrollTo(0, 0);
   }
   function handleToHomeSection() {
     navigate("/");

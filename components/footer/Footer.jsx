@@ -47,10 +47,10 @@ export default function Footer() {
         <a href="tiktok.com" title="TikTok">
           <FaTiktok style={styles} />
         </a>
-        <a href="instagram.com" title="Instagram">
+        <a href="https://www.instagram.com/gael_essence/" title="Instagram" target="_blank">
           <FaInstagram style={styles} />
         </a>
-        <a href="whatsapp.com" title="Whatsapp">
+        <a href="https://wa.me/254757382779?text=" title="Whatsapp" target="_blank">
           <FaWhatsapp style={styles} />
         </a>
       </div>

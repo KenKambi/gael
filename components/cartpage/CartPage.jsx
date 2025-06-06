@@ -35,10 +35,11 @@ export default function CartPage(props) {
                 <div className="cart-display-item" key={item.id}>
                   <img src={item.image} alt="Perfume " /> <br />
                   <div className="cart-display-item-info">
-                    Item id {item.id} <br />
-                    Item Description: {item.description}
+                    Item id {item.id} <br /> <br />
+                    Item Description: <br /> {item.description} <br /> <br />
                     Qunatity : {item.quantity} <br /> <br />
                     Total : KES {(item.price * item.quantity).toFixed(2)}
+                    <hr />
                   </div>
                 </div>
               </div>

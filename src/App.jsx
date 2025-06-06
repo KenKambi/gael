@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer.jsx";
 import "../components/header/style.css";
 import items from "../src/data.js";
 import { useState } from "react";
-import { Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import CartPage from "../components/cartpage/CartPage.jsx";
 
 function App() {
