@@ -2,7 +2,6 @@ import { DiVim } from "react-icons/di";
 import "../cartpage/style.css";
 
 export default function CartPage(props) {
-  //console.log(props.cart)
 
   const total = props.cart.reduce((acc, item) => {
     return acc + item.price * item.quantity;
