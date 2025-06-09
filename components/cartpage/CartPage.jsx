@@ -8,9 +8,9 @@ export default function CartPage(props) {
   }, 0);
 
   const formattedTotal = total.toLocaleString("en-US", {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
-          })
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
 
   const message = encodeURIComponent(
     `Hello, I would like to order:\n\n` +
@@ -25,7 +25,7 @@ export default function CartPage(props) {
   );
 
   // const instagramLink = `https://www.instagram.com/direct/t/bossyboy_ke?text=${message}`;
-  const whatsappLink = `https://wa.me/254757382779?text=${message}`;
+  const whatsappLink = `https://wa.me/254758360451?text=${message}`;
   return (
     <div className="my-orders">
       {props.cart.length === 0 ? (
@@ -54,20 +54,20 @@ export default function CartPage(props) {
           })}
         </div>
       )}
-      <div className="checkout-section">
-        <h3>
-          {" "}
-          Subtotal: KES{" "}
-          {formattedTotal}{" "}
-        </h3>
-        <p> Send your oder to Gael Essence's Whatsapp/Instagram page:</p>
-        {/* <a href={instagramLink} target="_blank">
+      {props.cart.length !== 0 ? (
+        <div className="checkout-section">
+          <h3> Subtotal: KES {formattedTotal} </h3>
+          <p> Send your oder to Gael Essence's Whatsapp page:</p>
+          {/* <a href={instagramLink} target="_blank">
           <button> Order via Intagram</button>
         </a> */}
-        <a href={whatsappLink} target="_blank">
-          <button> Order via Whatsapp</button>
-        </a>
-      </div>
+          <a href={whatsappLink} target="_blank">
+            <button> Order via Whatsapp</button>
+          </a>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
