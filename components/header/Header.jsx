@@ -24,7 +24,7 @@ export default function Header(props) {
     window.scrollTo(0, 0);
   }
   function handleToHomeSection() {
-    navigate("/gael");
+    navigate("/gael/");
   }
 
   const styles = {
