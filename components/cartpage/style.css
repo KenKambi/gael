@@ -2,7 +2,7 @@
   display: flex;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .my-orders {
     display: flex;
     flex-direction: column;

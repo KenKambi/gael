@@ -38,8 +38,8 @@ export default function CartPage(props) {
           <h3> Your Cart :</h3>
           {props.cart.map((item) => {
             return (
-              <div className="cart-display">
-                <div className="cart-display-item" key={item.id}>
+              <div className="cart-display" key={item.id}>
+                <div className="cart-display-item" >
                   <img src={item.image} alt="Perfume " /> <br />
                   <div className="cart-display-item-info">
                     Item id {item.id} <br /> <br />

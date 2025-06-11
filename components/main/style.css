@@ -59,6 +59,10 @@ section > button:hover {
   background-color: #f5c5d5ce;
 }
 
+section:hover{
+  box-shadow: 0 2px 4px gray;
+}
+
 main > section > img {
   height: 250px;
   width: 250px;
