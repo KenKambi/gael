@@ -19,10 +19,12 @@
 }
 
 .no-items {
-  margin: 80px 20px 0 20px;
+  margin-top: 80px ;
+  margin-left: 20px;
+  margin-right: 20px;
   height: 200px;
   background-color: #f5c5d5;
-  width: auto;
+  width: 100%;
   /* max-width: 630px; */
   display: flex;
   flex-direction: row;

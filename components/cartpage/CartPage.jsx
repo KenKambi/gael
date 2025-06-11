@@ -1,4 +1,5 @@
 import { DiVim } from "react-icons/di";
+import { FaWhatsapp } from "react-icons/fa";
 import "../cartpage/style.css";
 
 export default function CartPage(props) {
@@ -35,7 +36,6 @@ export default function CartPage(props) {
       ) : (
         <div className="ordered-list">
           <h3> Your Cart :</h3>
-
           {props.cart.map((item) => {
             return (
               <div className="cart-display">
@@ -62,7 +62,7 @@ export default function CartPage(props) {
           <button> Order via Intagram</button>
         </a> */}
           <a href={whatsappLink} target="_blank">
-            <button> Order via Whatsapp</button>
+            <button> Order via Whatsapp <FaWhatsapp/> </button>
           </a>
         </div>
       ) : (
