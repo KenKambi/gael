@@ -49,7 +49,7 @@ function App() {
     <>
       <Header count={totalItemCount} />
       <Routes>
-        <Route path="/" element={<main> {data} </main>} />
+        <Route path="/gael" element={<main> {data} </main>} />
         <Route path="/cart" element={<CartPage cart={cart} />} />
       </Routes>
 
