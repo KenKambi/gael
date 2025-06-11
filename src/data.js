@@ -3,7 +3,7 @@
 const items = [
   {
     "id": "P001",
-    "image": new URL ("./assets/yara-perfume.jpg", import.meta.url).href,
+    "image": new URL ("../src/assets/yara-perfume.jpg", import.meta.url).href,
     "description": "A timeless and iconic floral aldehyde fragrance for women. Elegant, sophisticated, and utterly unforgettable.",
     "price": 150.00,
     "quantity": 1
