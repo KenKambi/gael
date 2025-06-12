@@ -28,7 +28,7 @@ export default function CartPage(props) {
   );
 
   // const instagramLink = `https://www.instagram.com/direct/t/bossyboy_ke?text=${message}`;
-  const whatsappLink = `https://wa.me/254757382779?text=${message}`;
+  const whatsappLink = `https://wa.me/254758360451?text=${message}`;
   return (
     <div className="my-orders">
       {props.cart.length === 0 ? (
