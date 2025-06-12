@@ -10,7 +10,7 @@ const items = [
   },
   {
     "id": "P002",
-    "image": "../src/assets/embace-perfume.png",
+    "image": new URL ("../src/assets/yara-perfume.jpg", import.meta.url).href,
     "description": "A radically fresh, raw, and noble composition for men. Inspired by wild, open spaces and a scorching blue sky.",
     "price": 120.00,
     "quantity": 1
