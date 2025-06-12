@@ -3,7 +3,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import "../cartpage/style.css";
 
 export default function CartPage(props) {
-
   const total = props.cart.reduce((acc, item) => {
     return acc + item.price * item.quantity;
   }, 0);
@@ -19,14 +18,17 @@ export default function CartPage(props) {
         .map((item) => {
           return `${item.name}\n Quantity: ${
             item.quantity
-          } - KES ${item.price.toFixed(2)}\n`;
+          } - KES ${item.price.toLocaleString("en-US", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}\n`;
         })
         .join(`\n`) +
-      `\n\n Total: KES ${formattedTotal}`
+      `\n\n Subtotal: KES ${formattedTotal}`
   );
 
   // const instagramLink = `https://www.instagram.com/direct/t/bossyboy_ke?text=${message}`;
-  const whatsappLink = `https://wa.me/254758360451?text=${message}`;
+  const whatsappLink = `https://wa.me/254757382779?text=${message}`;
   return (
     <div className="my-orders">
       {props.cart.length === 0 ? (
@@ -39,13 +41,21 @@ export default function CartPage(props) {
           {props.cart.map((item) => {
             return (
               <div className="cart-display" key={item.id}>
-                <div className="cart-display-item" >
-                  <img src={item.image} alt="Perfume " /> <br />
+                <div className="cart-display-item">
+                  <img src={item.image} alt={item.name} /> <br />
                   <div className="cart-display-item-info">
-                    Item id {item.id} <br /> <br />
-                    Item Description: <br /> {item.description} <br /> <br />
-                    Qunatity : {item.quantity} <br /> <br />
-                    Total : KES {(item.price * item.quantity).toFixed(2)}
+                    <span>{item.name}</span>
+                    <p>
+                      Item Description: <br /> {item.description2} <br /> <br />
+                    </p>
+                    <p>Qunatity : {item.quantity}</p>
+                    <p>
+                      Total : KES{" "}
+                      {(item.price * item.quantity).toLocaleString("en-US", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}
+                    </p>
                     <hr />
                   </div>
                 </div>
@@ -62,7 +72,10 @@ export default function CartPage(props) {
           <button> Order via Intagram</button>
         </a> */}
           <a href={whatsappLink} target="_blank">
-            <button> Order via Whatsapp <FaWhatsapp/> </button>
+            <button>
+              {" "}
+              Order via Whatsapp <FaWhatsapp />{" "}
+            </button>
           </a>
         </div>
       ) : (

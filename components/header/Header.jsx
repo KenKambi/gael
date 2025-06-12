@@ -37,7 +37,7 @@ export default function Header(props) {
       <button className="logo-btn" onClick={handleToHomeSection} title="Home">
         <nav>
           <img className="gael-logo" src={icon} alt="Gael Essence" />
-          <h3> Gael Essencesssszzzyyyy </h3>
+          <h3> Gael Essence </h3>
         </nav>
       </button>
       <div className="cart">
