@@ -27,6 +27,36 @@ function App() {
     });
   }
 
+  function handleQuantityIncrease(itemId) {
+    setCart((prevCart) => {
+      return prevCart.map((item) => {
+        return item.id === itemId
+          ? { ...item, quantity: item.quantity + 1 }
+          : item;
+      });
+    });
+  }
+
+  function handleQuantityDecrease(itemId) {
+    setCart((prevCart) => {
+      return prevCart
+        .map((item) => {
+          return item.id === itemId && item.quantity > 1
+            ? { ...item, quantity: item.quantity - 1 }
+            : item;
+        })
+        .filter((item) => item.quantity > 0);
+    });
+  }
+
+  function handleDeleteCartitem(itemId) {
+    setCart((prevCart) => {
+      return prevCart.filter((item) => {
+        return item.id !== itemId;
+      });
+    });
+  }
+
   const data = items.map((item) => {
     return (
       <Main
@@ -50,7 +80,17 @@ function App() {
       <Header count={totalItemCount} />
       <Routes>
         <Route path="/gael" element={<main> {data} </main>} />
-        <Route path="/cart" element={<CartPage cart={cart} />} />
+        <Route
+          path="/gael/cart"
+          element={
+            <CartPage
+              cart={cart}
+              handleQuantityIncrease={handleQuantityIncrease}
+              handleQuantityDecrease={handleQuantityDecrease}
+              handleDeleteCartitem={handleDeleteCartitem}
+            />
+          }
+        />
       </Routes>
 
       <Footer />

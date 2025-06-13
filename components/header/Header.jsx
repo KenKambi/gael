@@ -8,19 +8,19 @@ export default function Header(props) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (props.count > 0) {
+    if (props.count === 1 ) {
       setCartMessage(true);
 
       const timer = setTimeout(() => {
         setCartMessage(false);
-      }, 2000);
+      }, 900);
 
       return () => clearTimeout(timer);
     }
-  }, [props.count]);
+  }, [props.count === 1]);
 
   function handleToCartSection() {
-    navigate("/cart");
+    navigate("/gael/cart");
     window.scrollTo(0, 0);
   }
   function handleToHomeSection() {

@@ -1,5 +1,5 @@
 import { DiVim } from "react-icons/di";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaMinus, FaPlus, FaWhatsapp } from "react-icons/fa";
 import "../cartpage/style.css";
 
 export default function CartPage(props) {
@@ -48,7 +48,38 @@ export default function CartPage(props) {
                     <p>
                       Item Description: <br /> {item.description2} <br /> <br />
                     </p>
-                    <p>Qunatity : {item.quantity}</p>
+                    <div className="quantity-section">
+                      <div className="quantity-section-value">
+                        <button
+                          onClick={() => {
+                            props.handleQuantityIncrease(item.id);
+                          }}
+                        >
+                          {" "}
+                          <FaPlus /> {props.cart.quantity}{" "}
+                        </button>
+                        <p>Qunatity : {item.quantity}</p>
+                        <button
+                          onClick={() => {
+                            props.handleQuantityDecrease(item.id);
+                          }}
+                        >
+                          {" "}
+                          <FaMinus />{" "}
+                        </button>
+                      </div>
+                      <span></span>
+                      <a
+                        onClick={() => {
+                          props.handleDeleteCartitem(item.id);
+                        }}
+                        title="Remove from cart"
+                      >
+                        {" "}
+                        Delete{" "}
+                      </a>
+                    </div>
+
                     <p>
                       Total : KES{" "}
                       {(item.price * item.quantity).toLocaleString("en-US", {
