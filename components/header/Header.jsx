@@ -26,7 +26,7 @@ export default function Header(props) {
   function handleToHomeSection() {
     navigate("/gael");
   }
-
+//styling of icons
   const styles = {
     color: "#FFF5F8",
     width: "30px",
