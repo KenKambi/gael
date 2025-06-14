@@ -58,7 +58,7 @@ export default function CartPage(props) {
                           {" "}
                           <FaPlus /> {props.cart.quantity}{" "}
                         </button>
-                        <p>Qunatity : {item.quantity}</p>
+                        <p>Quantity : {item.quantity}</p>
                         <button
                           onClick={() => {
                             props.handleQuantityDecrease(item.id);
