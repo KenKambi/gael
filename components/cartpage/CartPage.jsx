@@ -76,7 +76,7 @@ export default function CartPage(props) {
                         title="Remove from cart"
                       >
                         {" "}
-                        Delete{" "}
+                        Remove {" "}
                       </a>
                     </div>
 
