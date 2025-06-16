@@ -52,7 +52,7 @@ export default function CartPage(props) {
                       <div className="quantity-section-value">
                         <button
                           onClick={() => {
-                            props.handleQuantityIncrease(item.id);
+                            props.handleQuantityDecrease(item.id);
                           }}
                         >
                           {" "}
@@ -61,7 +61,7 @@ export default function CartPage(props) {
                         <p>Quantity : {item.quantity}</p>
                         <button
                           onClick={() => {
-                            props.handleQuantityDecrease(item.id);
+                            props.handleQuantityIncrease(item.id);
                           }}
                         >
                           {" "}
