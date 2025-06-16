@@ -37,4 +37,11 @@ footer hr {
 
 .socials {
   margin: 30px;
+
 }
+
+.socials a {
+  background-color: black;
+  margin: 6px;
+}
+

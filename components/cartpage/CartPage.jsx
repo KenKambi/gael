@@ -56,7 +56,7 @@ export default function CartPage(props) {
                           }}
                         >
                           {" "}
-                          <FaPlus /> {props.cart.quantity}{" "}
+                          <FaMinus /> {props.cart.quantity}{" "}
                         </button>
                         <p>Quantity : {item.quantity}</p>
                         <button
@@ -65,7 +65,7 @@ export default function CartPage(props) {
                           }}
                         >
                           {" "}
-                          <FaMinus />{" "}
+                          <FaPlus />{" "}
                         </button>
                       </div>
                       <span></span>
