@@ -1,8 +1,6 @@
 # GAEL 🚀  
 **Perfume Ellegance**  
-
-![Project Banner](https://via.placeholder.com/1200x400?text=GAEL+Digital+Experiences)  
-*Built with precision. Designed for innovation.*  
+  
 
 ---
 
@@ -32,9 +30,7 @@
 ## ⚙️ **Technologies**  
 | Tool          | Purpose                     |  
 |---------------|-----------------------------|  
-| **React**     | Frontend UI Framework       |  
-| **ESLint**    | Code Quality Enforcement    |  
-  
+| **React**     | Frontend UI Framework        
 
 ---
 
@@ -91,10 +87,6 @@ npm run build
 
 ---  
 
-### Why This Template?  
-1. **Visual Appeal:** Clean headers, badges, and tables.  
-2. **Scannable:** Key sections highlighted for quick navigation.  
-3. **Action-Oriented:** Clear CTAs (e.g., "Star this repo").  
-4. **GitHub-Friendly:** Optimized for markdown rendering.  
+  
 
 
