@@ -20,7 +20,7 @@ export default function Footer() {
     <footer>
       <div className="footer-info">
         <div>
-          <h3>Contact Us</h3>
+          <h3>Contact Us </h3>
           <h4>
             <FaPhone /> <span> +254 758 360451</span>
           </h4>
