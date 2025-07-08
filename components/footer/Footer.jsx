@@ -25,7 +25,7 @@ export default function Footer() {
             <FaPhone /> <span> +254 758 360451</span>
           </h4>
           <h4>
-            <FaEnvelope /> <span>gaellemayan65@gmail.com </span>
+            <FaEnvelope /> <span> gaellemayan65@gmail.com </span>
           </h4>
         </div>
         <div>
