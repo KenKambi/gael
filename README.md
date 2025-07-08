@@ -1,91 +1,90 @@
-# GAEL 🚀  
-**Perfume Ellegance**  
-  
+
+## Gael Essence
+
+[GitHub Repository](https://github.com/KenKambi/gael)
+
+## Overview
+
+**gael** is a public web project primarily written in JavaScript, with supporting CSS and HTML. It is developed and maintained by [KenKambi](https://github.com/KenKambi). The project is organized for modern web development and includes configuration files and a clear directory structure suitable for scalable application building.
 
 ---
 
-## 📌 **Table of Contents**  
-- [✨ Features](#-features)  
-- [🚀 Quick Start](#-quick-start)  
-- [⚙️ Technologies](#️-technologies)  
-- [📦 Installation](#-installation)  
-- [🎯 Usage](#-usage)  
-- [🧪 Testing](#-testing)  
-- [📜 License](#-license)  
+## Features
+
+- Built with JavaScript (76.1%), CSS (22.7%), and HTML (1.2%)
+- Contains modular source code, likely supporting a component-based approach
+- Uses modern development tools (e.g., Vite for fast builds)
+- Ready for customization and extension
 
 ---
 
-## ✨ **Features**  
+## Directory Structure (Typical)
+
+- `.gitignore` – Specifies files and directories to be ignored by Git
+- `README.md` – Project documentation (you are reading it!)
+- `eslint.config.js` – ESLint configuration for linting JavaScript code
+- `index.html` – Main HTML entry point
+- `package.json` – Project metadata and dependencies
+- `package-lock.json` – Dependency lock file
+- `vite.config.js` – Vite build tool configuration
+- `components/` – Likely contains reusable UI components
+- `public/` – Static assets served directly
+- `src/` – Main source code
 
 ---
 
-## 🚀 **Quick Start**  
-### Prerequisites  
-- Node.js ≥ v14  
-- npm  
-- Git  
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+
+### Installation
+
+```bash
+git clone https://github.com/KenKambi/gael.git
+cd gael
+npm install
+```
+
+### Running the Project
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to the local server URL (typically `http://localhost:5173/`).
 
 ---
 
-## ⚙️ **Technologies**  
-| Tool          | Purpose                     |  
-|---------------|-----------------------------|  
-| **React**     | Frontend UI Framework        
+## Contributing
+
+1. Fork the repository
+2. Create a new branch for your feature or bugfix
+3. Commit your changes with clear messages
+4. Push to your fork and submit a pull request
 
 ---
 
-## 📦 **Installation**  
-1. **Clone the repo:**  
-   ```bash  
-   git clone https://github.com/KenKambi/gael.git  
-   ```  
-2. **Install dependencies:**  
-   ```bash  
-   npm install  
-   ```  
-3. **Launch dev server:**  
-   ```bash  
-   npm start  
-   ```  
+## Issues
+
+If you encounter any issues, please open one in the [Issues section](https://github.com/KenKambi/gael/issues) on GitHub.
 
 ---
 
-## 🎯 **Usage**  
-### Task Execution (Test Mode)  
-
-### Production Build  
-```bash  
-npm run build  
-```  
+## License
+&copy; KenKambi
 
 ---
-
-## 🧪 **Testing**  
-- **Run all tests:**  
-  ```bash  
-  npm test  
-  ```  
-- **Test with diagnostics:**  
-  ```bash  
-  npm run test:diagnose  
-  ```  
-
----
-
-## 📜 **License**  
-© [Ken Kambi] 
-
----  
 
 **💡 Pro Tip:** Star ⭐ this repo to stay updated!  
-**🐞 Found an issue?** [Report it here](https://github.com/KenKambi/gael/issues).  
 
----  
+---
 
 [![GitHub Stars](https://img.shields.io/github/stars/KenKambi/gael?style=social)](https://github.com/KenKambi/gael)  
 *Crafting digital excellence, one commit at a time.*  
 
----  
+---
 
   
 
