@@ -36,7 +36,7 @@ export default function Footer() {
               {" "}
               <FaPhone /> <span> +254 758 360451</span>{" "}
             </p>
-            <p>(Gloria Erupe) </p>
+            <p>( Gloria Erupe ) </p>
           </h4>
         </div>
       </div>
