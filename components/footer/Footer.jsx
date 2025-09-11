@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <h3> Payment options </h3>
           <h4>
-            <p>You can pay via Pochi la Biashara :</p>
+            <p>You can pay via Pochi la Biashara:</p>
             <p>
               {" "}
               <FaPhone /> <span> +254 758 360451</span>{" "}
