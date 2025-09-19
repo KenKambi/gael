@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../main/style.css";
 
 export default function Main(props) {
-  //console.log(props.item.id)
+  
   return (
     <section>
       <img src={props.item.image} alt="Perfume " />
