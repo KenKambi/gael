@@ -1,40 +1,24 @@
 
 ## Gael Essence
+Where scent meets digital elegance.
 
 [GitHub Repository](https://github.com/KenKambi/gael)
 
 ## Overview
 
-**Gael Essence** is an e-commerce web project for selling beauty preducts. It is maintained by [KenKambi](https://github.com/KenKambi). 
+**Gael Essence** is an e-commerce web project for selling beauty preducts.  
 
----
+The goal was to recreate the calm, elegant feeling of product discovery in an online space—minimalist, immersive, and intuitive.
 
-## Contributing
+Built with React, the platform features a clean, responsive interface that works beautifully on mobile. Users can browse fragrances with 
 
-1. Fork the repository
-2. Create a new branch for your feature or bugfix
-3. Commit your changes with clear messages
-4. Push to your fork and submit a pull request
-
----
+visual cues and short descriptions, while a WhatsApp integration enables direct communication for inquiries or placing orders.
 
 ## Issues
 
 If you encounter any issues, please open one in the [Issues section](https://github.com/KenKambi/gael/issues) on GitHub.
 
----
 
-## License
-&copy; KenKambi
-
----
-
-**💡 Pro Tip:** Star ⭐ this repo to stay updated!  
-
----
-*Crafting digital excellence, one commit at a time.*  
-
----
 
   
 
